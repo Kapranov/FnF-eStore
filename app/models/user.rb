@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
     self.role ||= :user
   end
 
+  attachment :profile_image, type: :image
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 end

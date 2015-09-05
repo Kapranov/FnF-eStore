@@ -8,9 +8,31 @@ module DevisePermittedParameters
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:name, :email, :password, :password_confirmation) }
-    devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:name, :email, :password, :remember_me) }
-    devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:name, :email, :password, :password_confirmation, :note, :about) }
+    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(
+      :name,
+      :email,
+      :password,
+      :password_confirmation
+    ) }
+    devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(
+      :name,
+      :email,
+      :password,
+      :remember_me
+    ) }
+    devise_parameter_sanitizer.for(:account_update) { |u| u.permit(
+      :name,
+      :email,
+      :password,
+      :password_confirmation,
+      :note,
+      :about,
+      :profile_image,
+      :profile_image_filename,
+      :profile_image_size,
+      :profile_image_content_type,
+      :remove_profile_image,
+    ) }
   end
 
 end

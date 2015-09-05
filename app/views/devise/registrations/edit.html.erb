@@ -7,6 +7,14 @@
       <%= f.text_field :name, :autofocus => true, class: 'form-control' %>
     </div>
     <div class="form-group">
+      <%= f.label :profile_image %>
+      <%= image_tag attachment_url(@user, :profile_image, :fill, 300, 150, format: "jpg") %>
+      <%= f.check_box :remove_profile_image %>
+      <%= f.label :remove_profile_image %>
+      </br>
+      <%= f.attachment_field :profile_image %>
+    </div>
+    <div class="form-group">
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>

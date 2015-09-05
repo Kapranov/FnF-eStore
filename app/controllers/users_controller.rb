@@ -32,7 +32,16 @@ class UsersController < ApplicationController
   private
 
   def secure_params
-    params.require(:user).permit(:role, :note, :about)
+    params.require(:user).permit(
+      :role,
+      :note,
+      :about,
+      :profile_image,
+      :profile_image_filename,
+      :profile_image_size,
+      :profile_image_content_type,
+      :remove_profile_image,
+    )
   end
 
 end
