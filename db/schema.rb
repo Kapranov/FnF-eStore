@@ -40,7 +40,6 @@ ActiveRecord::Schema.define(version: 20150905144509) do
     t.integer  "role"
     t.text     "note"
     t.text     "about"
-    t.string   "avatar_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
