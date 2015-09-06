@@ -1,20 +1,14 @@
-//= require jquery
-//= require jquery_ujs
-//= require bootstrap-sprockets
-//= require dropzone/dropzone.js
-//= require_tree .
-
 $(document).ready(function(){
 	// disable auto discover
 	Dropzone.autoDiscover = false;
 
 	// grap our upload form by its id
-	$("#area-upload").dropzone({
+	$("#new_upload").dropzone({
 		// restrict image size to a maximum 1MB
 		maxFilesize: 1,
 		// changed the passed param to one accepted by
 		// our rails app
-		paramName: "user[profile_image]",
+		paramName: "upload[image]",
 		// show remove links on each image upload
 		addRemoveLinks: true,
 		// if the upload was successful
