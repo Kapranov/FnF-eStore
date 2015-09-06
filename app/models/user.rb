@@ -10,4 +10,21 @@ class User < ActiveRecord::Base
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  translates :name, :note, :about, :fallbacks_for_empty_translations => true
+
+  # translates :name, :note, :about, :slug
+  # include FriendlyId
+  # friendly_id :name, use: [:slugged, :finders]
+  # User.translation_class.all
+  # User.joins(:translations).where('user_translations.locale =?', Globalize.locale)
+  # User.joins(:translations).where('user_translations.locale =?', Globalize.locale).pluck(:name)
+  # User.joins(:translations).where('user_translations.locale =?', Globalize.locale).to_sql
+  # User.joins(:translations).where('user_translations.locale =?', Globalize.locale).map(&:name)
+  #
+  # p = User.create(name: "a name")
+  # User.joins(:translations).pluck(:name)
+  #
+  # User.joins(:translations).where('user_translations.locale = ?', Globalize.locale).group("user.id").pluck(:name, :id)
+  # Globalize::Version
 end
