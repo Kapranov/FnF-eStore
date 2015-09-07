@@ -29,3 +29,12 @@ module FnfEstore
     config.autoload_paths << Rails.root.join('lib')
   end
 end
+
+### Application localization
+# Don't raise an InvalidLocale exception when the passed locale is not available
+I18n.config.enforce_available_locales = false
+
+# FastGettext settings
+FastGettext.add_text_domain 'app', path: 'locale', type: :po
+FastGettext.default_available_locales = Rails.application.config.i18n.available_locales
+FastGettext.default_text_domain = 'app'

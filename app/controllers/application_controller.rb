@@ -2,6 +2,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :set_locale
 
+  include FastGettext::Translation
+
   def set_locale
     if cookies[:FnfEstore_locale] && I18n.available_locales.include?(cookies[:FnfEstore_locale].to_sym)
       l = cookies[:FnfEstore_locale].to_sym
