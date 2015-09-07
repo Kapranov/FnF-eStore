@@ -25,7 +25,6 @@ module FnfEstore
     config.active_record.timestamped_migrations = true
     config.active_record.raise_in_transactional_callbacks = true
     config.exceptions_app = self.routes
-    config.assets.paths << "#{Rails}/vendor/assets/fonts"
     config.autoload_paths << Rails.root.join('lib')
   end
 end
