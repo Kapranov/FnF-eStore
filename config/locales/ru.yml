@@ -1,2 +1,18 @@
 ru:
   hello: "Привет мир"
+  menu:
+    panels:
+      lang: "Локализация"
+      en: "English"
+      ru: "Русский"
+      uk: "Українська"
+    languages:
+      lang: "Язык"
+      en: "English"
+      ru: "Русский"
+      uk: "Українська"
+    calendar:
+      lang: "Выберете язык календаря: "
+      en: "English"
+      ru: "Русский"
+      uk: "Українська"

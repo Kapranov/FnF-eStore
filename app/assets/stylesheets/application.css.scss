@@ -3,6 +3,13 @@
  *= require_self
  *= require dropzone/basic.css
  *= require dropzone/dropzone.css
+ *= require font-awesome
  */
 
 .translation_missing { color: red; background: black; }
+
+#footer {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}

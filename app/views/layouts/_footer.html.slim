@@ -1,0 +1,18 @@
+.footer
+  .pull-right
+    div
+      strong
+        | Zettheme Inc. &copy; 2015
+  .pull-left
+    strong
+      = I18n.localize(Date.today, :format => :long)
+  .col-md-3.center-block
+    small
+      .col-xs-3
+        = link_to t('menu.languages.en'), change_locale_path(:en)
+        '
+      .col-xs-3
+        = link_to t('menu.languages.ru'), change_locale_path(:ru)
+        '
+      .col-xs-3
+        = link_to t('menu.languages.uk'), change_locale_path(:uk)

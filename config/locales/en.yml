@@ -1,2 +1,18 @@
 en:
   hello: "Hello world"
+  menu:
+    panels:
+      lang: "Localization"
+      en: "English"
+      ru: "Русский"
+      uk: "Українська"
+    languages:
+      lang: "Language"
+      en: "English"
+      ru: "Русский"
+      uk: "Українська"
+    calendar:
+      lang: "Choose your language calendar: "
+      en: "English"
+      ru: "Русский"
+      uk: "Українська"
