@@ -30,6 +30,7 @@ gem 'gettext_i18n_rails'
 gem 'globalize',                      '~> 5.0.0'
 gem 'globalize-accessors'
 gem 'geocoder'
+gem 'countries_and_languages', :require => 'countries_and_languages/rails'
 
 group :development do
   gem 'web-console',                  '~> 2.0'
@@ -49,6 +50,8 @@ group :development do
   gem 'rb-fsevent', :require=>false
   gem 'rb-inotify', :require=>false
   gem 'spring-commands-rspec'
+  gem 'gettext',                      '>= 3.1.6', :require => false
+  gem 'ruby_parser', :require => false
 end
 
 group :development, :test do
