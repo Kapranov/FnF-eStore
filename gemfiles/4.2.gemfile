@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby File.read('.ruby-version').strip
 
 gem 'rails',                          '4.2.4'
 # gem 'dalli'
@@ -23,9 +23,12 @@ gem 'upmin-admin'
 gem 'annotate'
 gem 'refile', require: "refile/rails"
 gem 'refile-mini_magick'
+gem 'rails-i18n',                     '~> 4.0.0'
+gem 'devise-i18n'
+gem 'fast_gettext'
+gem 'gettext_i18n_rails'
 gem 'globalize',                      '~> 5.0.0'
 gem 'globalize-accessors'
-gem 'rails-i18n',                     '~> 4.0.0'
 gem 'geocoder'
 
 group :development do
