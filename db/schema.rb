@@ -24,11 +24,13 @@ ActiveRecord::Schema.define(version: 20150906174730) do
   add_index "sessions", ["updated_at"], name: "index_sessions_on_updated_at"
 
   create_table "user_translations", force: :cascade do |t|
-    t.integer  "user_id",    null: false
-    t.string   "locale",     null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "name"
+    t.integer  "user_id",     null: false
+    t.string   "locale",      null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "middle_name"
     t.text     "note"
     t.text     "about"
   end
@@ -49,7 +51,9 @@ ActiveRecord::Schema.define(version: 20150906174730) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                              null: false
     t.datetime "updated_at",                              null: false
-    t.string   "name"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "middle_name"
     t.integer  "role"
     t.text     "note"
     t.text     "about"

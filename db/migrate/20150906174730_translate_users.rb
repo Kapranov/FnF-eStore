@@ -1,7 +1,9 @@
 class TranslateUsers < ActiveRecord::Migration
   def self.up
     User.create_translation_table!({
-      name: :string,
+      first_name: :string,
+      last_name: :string,
+      middle_name: :string,
       note: :text,
       about: :text
     }, {
