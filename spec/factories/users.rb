@@ -29,7 +29,11 @@
 
 FactoryGirl.define do
   factory :user do
-    name "Test User"
+    first_name "User"
+    last_name "Tester"
+    middle_name "Factory"
+    note "Note"
+    about "About"
     email "test@example.com"
     password "please123"
 
