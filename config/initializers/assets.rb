@@ -9,3 +9,4 @@ Rails.application.config.assets.precompile += %w( pace/themes/green/pace-theme-b
 Rails.application.config.assets.precompile += %w( slimscroll/jquery.slimscroll.js )
 Rails.application.config.assets.precompile += %w( summernote/summernote.css summernote/summernote-bs3.css summernote/summernote.min.js summernote/summernote-ru-RU.js summernote/summernote-uk-UA.js )
 Rails.application.config.assets.precompile += %w( toastr/toastr.min.css toastr/toastr.min.js )
+Rails.application.config.assets.precompile += %w( landings.css landings.js )

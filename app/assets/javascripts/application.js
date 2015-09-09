@@ -3,7 +3,7 @@
 //= require bootstrap-sprockets
 //= require dropzone/dropzone.js
 //= require pace/pace.min.js
-//= require_tree .
+// require_tree .
 
 $(document).ready(function(){
 	// disable auto discover

@@ -18,5 +18,62 @@ msgstr ""
 " && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "\n"
 
+msgid "Authorization"
+msgstr "Авторизація"
+
+msgid "Catalog of products"
+msgstr "Каталог продукції"
+
+msgid "Contact"
+msgstr "Контакт"
+
+msgid "Features"
+msgstr "Особливості"
+
 msgid "Home"
 msgstr "Головна"
+
+msgid "Inspinia Theme"
+msgstr "Zettheme Inc."
+
+msgid "Learn more"
+msgstr "Дізнатися більше"
+
+msgid "Lorem_Ipsum"
+msgstr "Простий манекен тексту друку стилю Лорем Іпсам"
+
+msgid "Pricing"
+msgstr "Ціноутворення"
+
+msgid "READ MORE"
+msgstr "ЧИТАТИ ДАЛІ"
+
+msgid "Team"
+msgstr "Команда"
+
+msgid "Testimonials"
+msgstr "Відгуки"
+
+msgid "carusel_text_1"
+msgstr "Ми розробляємо"
+
+msgid "carusel_text_2"
+msgstr "веб -додатки та"
+
+msgid "carusel_text_3"
+msgstr "інтерфейси,"
+
+msgid "carusel_text_4"
+msgstr "ми веб студія"
+
+msgid "carusel_text_5"
+msgstr " "
+
+msgid "carusel_text_6"
+msgstr "Ми створюємо сенс"
+
+msgid "carusel_text_7"
+msgstr "інтерфейси, які надихають ."
+
+msgid "carusel_text_8"
+msgstr "Життя - гра , перше правило якої - вважати, що це зовсім не гра , а серйозно ."
