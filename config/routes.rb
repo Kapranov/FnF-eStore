@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+
+  get 'stores/index'
+
+  get 'products/index'
+
+  get 'categories/index'
+
+  get 'companies/index'
+
+  get 'forum_threads/index'
+
+  get 'calendars/index'
+
+  get 'dashboards/index'
   get 'landings/index'
   get 'settings/change_locale'
 
@@ -17,6 +31,8 @@ Rails.application.routes.draw do
     get code, :to => "errors#show", :code => code
   end
 
-  match 'landing', to: 'landings#index', via: [:get]
+  match 'landing',    to: 'landings#index',   via: [:get]
+  match 'dashboard',  to: 'dashboards#index', via: [:get]
+  match 'dashboards', to: 'dashboards#index', via: [:get]
 
 end

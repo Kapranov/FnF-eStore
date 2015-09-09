@@ -1,0 +1,84 @@
+nav.navbar-default.navbar-static-side[role="navigation"]
+  .sidebar-collapse
+    ul.nav#side-menu
+      li.nav-header
+        .dropdown.profile-element
+          - if current_user.profile_image_id?
+            span
+              = image_tag attachment_url(current_user, :profile_image, :fill, 100, 100), class: 'img-circle'
+          - else
+            = image_tag 'images.png', size: "100", class: "img-circle"
+          a[data-toggle="dropdown" class="dropdown-toggle" href="#"]
+            span.clear
+              span.block.m-t-lg
+                - if current_user.profile_image_id?
+                  strong.font-bold = current_user.name
+              span.text-muted.text-xs.block.size8
+                '
+                = _('Avatar menu')
+                '
+                b.caret
+          ul.dropdown-menu.animated.fadeInRight.m-t-xs
+            li
+              a[href="/profile"] = _('Profile')
+            li
+              a[href="contacts.html"] = _('Contacts')
+            li
+              a[href="mailbox.html"] = _('Mailbox')
+            li.divider
+            li = link_to _('Logout'), destroy_user_session_path, :method=>'delete'
+        .logo-element FnF
+      li
+        a[href="#{url_for :controller => 'dashboards', :action => 'index'}"]
+          i.fa.fa-th-large
+          span.nav-label = _('Dashboard')
+      li
+        a[href="/profile"]
+          i.fa.fa-users
+          span.nav-label = _('Profile')
+      li
+        a[href="#{url_for :controller => 'calendars', :action => 'index'}"]
+          i.fa.fa-calendar-check-o
+          span.nav-label = _('Calendar')
+        /= link_to 'Calendar',
+      li
+        a[href="#{url_for :controller => 'forum_threads', :action => 'index'}"]
+          i.fa.fa-globe
+          span.nav-label = _('Blog')
+      li
+        a[href="#{url_for :controller => 'forum_threads', :action => 'index'}"]
+          i.fa.fa-houzz
+          span.nav-label = _('Forum')
+      li
+        a[href="#{url_for :controller => 'companies', :action => 'index'}"]
+          i.fa.fa-ioxhost
+          span.nav-label = _('Companies')
+      li
+        a[href="#{url_for :controller => 'dashboards', :action => 'index'}"]
+          i.fa.fa-newspaper-o
+          span.nav-label = _('Catalog')
+          span.fa.arrow
+        ul.nav.nav-second-level
+          li
+            a[href="#{url_for :controller => 'categories', :action => 'index'}"] = _('Categories')
+          li
+            a[href="#{url_for :controller => 'products', :action => 'index'}"] = _('Products')
+      li
+        a[href="#{url_for :controller => 'dashboards', :action => 'index'}"]
+          i.fa.fa-edit
+          span.nav-label = _('Orders')
+      li
+        a[href="#{url_for :controller => 'dashboards', :action => 'index'}"]
+          i.fa.fa-cogs
+          span.nav-label = _('Administration')
+          span.fa.arrow
+        ul.nav.nav-second-level
+          li
+            a[href="#{url_for :controller => 'dashboards', :action => 'index'}"] = _('Manage roles')
+          li
+            a[href="#{url_for :controller => 'dashboards', :action => 'index'}"] = _('Manage users')
+      li.landing_link
+        a[target="_blank" href="#{url_for :controller => 'stores', :action => 'index'}"]
+          i.fa.fa-shopping-cart
+          span.nav-label = _('E-commerce')
+          span.label.label-warning.pull-right

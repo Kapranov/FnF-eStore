@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: app 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-09 13:35+0300\n"
-"PO-Revision-Date: 2015-09-09 13:35+0300\n"
+"POT-Creation-Date: 2015-09-09 21:12+0300\n"
+"PO-Revision-Date: 2015-09-09 21:12+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -18,16 +18,49 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
+msgid "Administration"
+msgstr ""
+
 msgid "Authorization"
+msgstr ""
+
+msgid "Avatar menu"
+msgstr ""
+
+msgid "Blog"
+msgstr ""
+
+msgid "Calendar"
+msgstr ""
+
+msgid "Catalog"
 msgstr ""
 
 msgid "Catalog of products"
 msgstr ""
 
+msgid "Categories"
+msgstr ""
+
+msgid "Companies"
+msgstr ""
+
 msgid "Contact"
 msgstr ""
 
+msgid "Contacts"
+msgstr ""
+
+msgid "Dashboard"
+msgstr ""
+
+msgid "E-commerce"
+msgstr ""
+
 msgid "Features"
+msgstr ""
+
+msgid "Forum"
 msgstr ""
 
 msgid "Home"
@@ -39,19 +72,46 @@ msgstr ""
 msgid "Learn more"
 msgstr ""
 
+msgid "Logout"
+msgstr ""
+
 msgid "Lorem_Ipsum"
+msgstr ""
+
+msgid "Mailbox"
+msgstr ""
+
+msgid "Manage roles"
+msgstr ""
+
+msgid "Manage users"
+msgstr ""
+
+msgid "Orders"
 msgstr ""
 
 msgid "Pricing"
 msgstr ""
 
+msgid "Products"
+msgstr ""
+
+msgid "Profile"
+msgstr ""
+
 msgid "READ MORE"
+msgstr ""
+
+msgid "Search for something"
 msgstr ""
 
 msgid "Team"
 msgstr ""
 
 msgid "Testimonials"
+msgstr ""
+
+msgid "Welcome to dashboard page"
 msgstr ""
 
 msgid "carusel_text_1"

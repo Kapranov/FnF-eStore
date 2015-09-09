@@ -18,17 +18,50 @@ msgstr ""
 " && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "\n"
 
+msgid "Administration"
+msgstr "Адміністрування"
+
 msgid "Authorization"
 msgstr "Авторизація"
+
+msgid "Avatar menu"
+msgstr "Персональна інформація"
+
+msgid "Blog"
+msgstr "Блог"
+
+msgid "Calendar"
+msgstr "Календар"
+
+msgid "Catalog"
+msgstr "Каталог"
 
 msgid "Catalog of products"
 msgstr "Каталог продукції"
 
+msgid "Categories"
+msgstr "Категорії"
+
+msgid "Companies"
+msgstr "Компанії"
+
 msgid "Contact"
 msgstr "Контакт"
 
+msgid "Contacts"
+msgstr "Контакти"
+
+msgid "Dashboard"
+msgstr "Панель"
+
+msgid "E-commerce"
+msgstr "Інтернет магазин"
+
 msgid "Features"
 msgstr "Особливості"
+
+msgid "Forum"
+msgstr "Форум"
 
 msgid "Home"
 msgstr "Головна"
@@ -39,20 +72,47 @@ msgstr "Zettheme Inc."
 msgid "Learn more"
 msgstr "Дізнатися більше"
 
+msgid "Logout"
+msgstr "Вийти"
+
 msgid "Lorem_Ipsum"
 msgstr "Простий манекен тексту друку стилю Лорем Іпсам"
+
+msgid "Mailbox"
+msgstr "Поштова скринька"
+
+msgid "Manage roles"
+msgstr "Управління ролями"
+
+msgid "Manage users"
+msgstr "Управління користувачами"
+
+msgid "Orders"
+msgstr "Замовлення"
 
 msgid "Pricing"
 msgstr "Ціноутворення"
 
+msgid "Products"
+msgstr "Товари"
+
+msgid "Profile"
+msgstr "Профіль"
+
 msgid "READ MORE"
 msgstr "ЧИТАТИ ДАЛІ"
+
+msgid "Search for something"
+msgstr "Пошук чогось ... "
 
 msgid "Team"
 msgstr "Команда"
 
 msgid "Testimonials"
 msgstr "Відгуки"
+
+msgid "Welcome to dashboard page"
+msgstr "Ласкаво просимо "
 
 msgid "carusel_text_1"
 msgstr "Ми розробляємо"

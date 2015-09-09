@@ -1,12 +1,11 @@
 /*
+ *= require font-awesome
  *= require dropzone/basic.css
  *= require dropzone/dropzone.css
- *= require font-awesome
  */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en");
 
 .translation_missing { color: red; background: black; }
@@ -99,6 +98,8 @@ section {
   padding-top: 10px;
 }
 
+/*
+
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -175,3 +176,5 @@ section {
   0% { transform: rotate(0deg); transform: rotate(0deg); }
   100% { transform: rotate(360deg); transform: rotate(360deg); }
 }
+
+*/
