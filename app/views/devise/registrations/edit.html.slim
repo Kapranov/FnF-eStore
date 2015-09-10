@@ -21,8 +21,8 @@
           - else
             = image_tag 'images.png', size: "120", class: "img-circle img-thumbnail"
           .form-group
-            /= f.label :avatar, t('Your avatar')
-            = f.attachment_field :profile_image, direct: true, style: "margin-left:42%"
+            /= f.attachment_field :profile_image, direct: true, style: "margin-left:42%"
+            /= f.file_field :profile_image, multipart: true, id: "area-upload", class: "dropzone"
     .row
       .col-md-6
         .authform
@@ -49,8 +49,11 @@
       .col-md-6
         .authform
           .form-group
+            /= f.attachment_field :profile_image, multipart: true, id: "area-upload", class: "dropzone", style: "width:385px"
+            = f.attachment_field :profile_image, multipart: true, id: "area-upload", class: "dropzone", style: "width:385px"
+          .form-group
             = f.input :about, class: 'form-control', autocomplete: "off", placeholder: _('About'),
-              label: false, required: false, hint: _('Leave it blank'), as: :text, input_html: { rows: "8" }
+              label: false, required: false, hint: _('Leave it blank'), as: :text, input_html: { rows: "4" }
           .form-group
             = f.input :note, class: 'form-control', autocomplete: "off", placeholder: _('Note'),
-              label: false, required: false, hint: _('Leave it blank'), as: :text, input_html: { rows: "8" }
+              label: false, required: false, hint: _('Leave it blank'), as: :text, input_html: { rows: "4" }

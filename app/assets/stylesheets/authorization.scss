@@ -1,4 +1,6 @@
 //= require animate/animate.css
+//= require dropzone/basic.css
+//= require dropzone/dropzone.css
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -4356,7 +4358,7 @@ body.skin-3 {
 
 .logo-name-profile {
   color: #e6e6e6;
-  font-size: 100px;
+  font-size: 120px;
   font-weight: 800;
   letter-spacing: -10px;
   margin-bottom: 0px;

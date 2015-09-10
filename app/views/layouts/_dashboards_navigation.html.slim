@@ -11,8 +11,7 @@ nav.navbar-default.navbar-static-side[role="navigation"]
           a[data-toggle="dropdown" class="dropdown-toggle" href="#"]
             span.clear
               span.block.m-t-lg
-                - if current_user.profile_image_id?
-                  strong.font-bold = current_user.name
+                strong.font-bold = current_user.name
               span.text-muted.text-xs.block.size8
                 '
                 = _('Avatar menu')

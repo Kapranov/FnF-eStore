@@ -64,9 +64,9 @@
             |:
             '
             - if current_user.note?
-              span = _('Valid')
+              span.fa.fa-thumbs-o-up
             - else
-              span = _('Unvalid')
+              span.fa.fa-thumbs-o-down
           '
           | |
           '
@@ -75,9 +75,9 @@
             |:
             '
             - if current_user.about?
-              span = _('Valid')
+              span.fa.fa-thumbs-o-up
             - else
-              span = _('Unvalid')
+              span.fa.fa-thumbs-o-down
       /.widget.red-bg.p-md
         .m-b-md
           h2 = _('Role')
@@ -92,19 +92,16 @@
         ul.list-unstyled.m-t-md
           li
             span.fa.fa-envelope.m-r-xs
-            label = _('Email')
             |:
             '
             = current_user.email
           li
             span.fa.fa-home.m-r-xs
-            label = _('Address')
             |:
             '
             | Street 200, Avenue 10
           li
             span.fa.fa-phone.m-r-xs
-            label = _('Contact')
             |:
             '
             | (+121) 678 3462

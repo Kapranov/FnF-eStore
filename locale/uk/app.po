@@ -202,7 +202,7 @@ msgid "Testimonials"
 msgstr "Відгуки"
 
 msgid "Unvalid"
-msgstr "Недійсне"
+msgstr "Немае"
 
 msgid "Update"
 msgstr "Оновлення"
@@ -211,7 +211,7 @@ msgid "Username"
 msgstr "Ваш Логін"
 
 msgid "Valid"
-msgstr "Дійсний"
+msgstr "Мае"
 
 msgid "Welcome to dashboard page"
 msgstr "Ласкаво просимо "
