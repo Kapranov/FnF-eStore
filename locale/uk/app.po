@@ -27,11 +27,17 @@ msgstr "Адреса"
 msgid "Administration"
 msgstr "Адміністрування"
 
+msgid "Are you sure"
+msgstr "Ви впевнені?"
+
 msgid "Authorization"
 msgstr "Авторизація"
 
 msgid "Avatar menu"
 msgstr "Персональна інформація"
+
+msgid "Back"
+msgstr "Повернутися"
 
 msgid "Blog"
 msgstr "Блог"
@@ -48,8 +54,17 @@ msgstr "Каталог продукції"
 msgid "Categories"
 msgstr "Категорії"
 
+msgid "Change my password"
+msgstr "Забули пароль?"
+
+msgid "Change your password"
+msgstr "Забули ваш пароль?"
+
 msgid "Companies"
 msgstr "Компанії"
+
+msgid "Confirm your new password"
+msgstr "Підтвердіть новий пароль"
 
 msgid "Contact"
 msgstr "Контакт"
@@ -57,20 +72,44 @@ msgstr "Контакт"
 msgid "Contacts"
 msgstr "Контакти"
 
+msgid "Create account to see it in action"
+msgstr "Створити аккаунт, щоб побачити його в дії ."
+
+msgid "Create an account"
+msgstr "Створити аккаунт"
+
+msgid "Currently waiting"
+msgstr "В даний час чекає підтвердження для: "
+
 msgid "Dashboard"
 msgstr "Панель"
 
 msgid "Dashboards"
 msgstr "Панелі"
 
+msgid "Do not have an account"
+msgstr "Немае аккаунта?"
+
 msgid "E-commerce"
 msgstr "Інтернет магазин"
+
+msgid "Edit profile"
+msgstr "Редагувати"
 
 msgid "Email"
 msgstr "Поштова скринька"
 
 msgid "Features"
 msgstr "Особливості"
+
+msgid "First Name"
+msgstr "Ім'я"
+
+msgid "Forgot password"
+msgstr "Забули пароль?"
+
+msgid "Forgot your password"
+msgstr "Забули ваш пароль?"
 
 msgid "Forum"
 msgstr "Форум"
@@ -81,8 +120,17 @@ msgstr "Головна"
 msgid "Inspinia Theme"
 msgstr "Zettheme Inc."
 
+msgid "Last Name"
+msgstr "Прізвище"
+
 msgid "Learn more"
 msgstr "Дізнатися більше"
+
+msgid "Leave it blank"
+msgstr "Залиште це поле порожнім , якщо ви не хочете, щоб змінити його"
+
+msgid "Login"
+msgstr "Ввійти"
 
 msgid "Logout"
 msgstr "Вийти"
@@ -99,11 +147,26 @@ msgstr "Управління ролями"
 msgid "Manage users"
 msgstr "Управління користувачами"
 
+msgid "Middle Name"
+msgstr "По батькові"
+
+msgid "New password"
+msgstr "Новий пароль!"
+
 msgid "Note"
 msgstr "Примітка"
 
 msgid "Orders"
 msgstr "Замовлення"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Password confirmation"
+msgstr "Підтвердження пароля"
+
+msgid "Please login in"
+msgstr "Будь ласка, увійдіть в ."
 
 msgid "Pricing"
 msgstr "Ціноутворення"
@@ -117,8 +180,20 @@ msgstr "Профіль"
 msgid "READ MORE"
 msgstr "ЧИТАТИ ДАЛІ"
 
+msgid "Register to fnf"
+msgstr "Зареєструйся, на FnF"
+
+msgid "Remove avatar"
+msgstr "Видалити аватар"
+
 msgid "Search for something"
 msgstr "Пошук чогось ... "
+
+msgid "Send me reset password instructions"
+msgstr "Відправити мені інструкції"
+
+msgid "Sign up"
+msgstr "Зареєструватися"
 
 msgid "Team"
 msgstr "Команда"
@@ -128,6 +203,12 @@ msgstr "Відгуки"
 
 msgid "Unvalid"
 msgstr "Недійсне"
+
+msgid "Update"
+msgstr "Оновлення"
+
+msgid "Username"
+msgstr "Ваш Логін"
 
 msgid "Valid"
 msgstr "Дійсний"
@@ -158,3 +239,6 @@ msgstr "інтерфейси, які надихають ."
 
 msgid "carusel_text_8"
 msgstr "Життя - гра , перше правило якої - вважати, що це зовсім не гра , а серйозно ."
+
+msgid "we app framework"
+msgstr "веб розробка"

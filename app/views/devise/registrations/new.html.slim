@@ -1,0 +1,22 @@
+.middle-box.text-center.loginscreen.animated.fadeInDown
+  .authform
+    = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), :html => { :role => 'form'}) do |f|
+      = f.error_notification
+      div
+        h1.logo-name FnF
+      h3 = _('Register to fnf')
+      p = _('Create account to see it in action')
+      = devise_error_messages!
+      .form-group
+        = f.text_field :first_name, required: true, autofocus: true, class: 'form-control', placeholder: _('First Name')
+      .form-group
+        = f.text_field :last_name, required: true, autofocus: true, class: 'form-control', placeholder: _('Last Name')
+      .form-group
+        = f.text_field :middle_name, required: true, autofocus: true, class: 'form-control', placeholder: _('Middle Name')
+      .form-group
+        = f.email_field :email, required: true, autofocus: true, class: 'form-control', placeholder: _('Email')
+      .form-group
+        = f.password_field :password, class: 'form-control', placeholder: _('Password'), required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length)
+      .form-group
+        = f.password_field :password_confirmation, required: true, class: 'form-control', placeholder: _('Password confirmation')
+      = f.submit _('Sign up'), :class => 'btn btn-primary block full-width m-b  right'

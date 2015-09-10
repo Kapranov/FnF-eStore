@@ -12,5 +12,6 @@ Rails.application.config.assets.precompile += %w( toastr/toastr.min.css toastr/t
 Rails.application.config.assets.precompile += %w( landings.css landings.js )
 Rails.application.config.assets.precompile += %w( errors.css errors.js )
 Rails.application.config.assets.precompile += %w( inspinia/inspinia.js )
+Rails.application.config.assets.precompile += %w( authorization.css authorization.js )
 Rails.application.config.assets.precompile += %w( dashboards.css dashboards.js )
 Rails.application.config.assets.precompile += %w( flot/curvedLines.js flot/excanvas.min.js flot/jquery.flot.js flot/jquery.flot.pie.js flot/jquery.flot.resize.js flot/jquery.flot.spline.js flot/jquery.flot.symbol.js flot/jquery.flot.time.js flot/jquery.flot.tooltip.min.js )

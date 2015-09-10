@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: app 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-10 13:04+0300\n"
-"PO-Revision-Date: 2015-09-10 13:04+0300\n"
+"POT-Creation-Date: 2015-09-10 15:38+0300\n"
+"PO-Revision-Date: 2015-09-10 15:38+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -27,16 +27,25 @@ msgstr ""
 msgid "Administration"
 msgstr ""
 
+msgid "Are you sure"
+msgstr ""
+
 msgid "Authorization"
 msgstr ""
 
 msgid "Avatar menu"
 msgstr ""
 
+msgid "Back"
+msgstr ""
+
 msgid "Blog"
 msgstr ""
 
 msgid "Calendar"
+msgstr ""
+
+msgid "Cancel my account"
 msgstr ""
 
 msgid "Catalog"
@@ -48,7 +57,16 @@ msgstr ""
 msgid "Categories"
 msgstr ""
 
+msgid "Change my password"
+msgstr ""
+
+msgid "Change your password"
+msgstr ""
+
 msgid "Companies"
+msgstr ""
+
+msgid "Confirm your new password"
 msgstr ""
 
 msgid "Contact"
@@ -57,19 +75,43 @@ msgstr ""
 msgid "Contacts"
 msgstr ""
 
+msgid "Create account to see it in action"
+msgstr ""
+
+msgid "Create an account"
+msgstr ""
+
+msgid "Currently waiting"
+msgstr ""
+
 msgid "Dashboard"
 msgstr ""
 
 msgid "Dashboards"
 msgstr ""
 
+msgid "Do not have an account"
+msgstr ""
+
 msgid "E-commerce"
+msgstr ""
+
+msgid "Edit profile"
 msgstr ""
 
 msgid "Email"
 msgstr ""
 
 msgid "Features"
+msgstr ""
+
+msgid "First Name"
+msgstr ""
+
+msgid "Forgot password"
+msgstr ""
+
+msgid "Forgot your password"
 msgstr ""
 
 msgid "Forum"
@@ -81,7 +123,16 @@ msgstr ""
 msgid "Inspinia Theme"
 msgstr ""
 
+msgid "Last Name"
+msgstr ""
+
 msgid "Learn more"
+msgstr ""
+
+msgid "Leave it blank"
+msgstr ""
+
+msgid "Login"
 msgstr ""
 
 msgid "Logout"
@@ -99,10 +150,25 @@ msgstr ""
 msgid "Manage users"
 msgstr ""
 
+msgid "Middle Name"
+msgstr ""
+
+msgid "New password"
+msgstr ""
+
 msgid "Note"
 msgstr ""
 
 msgid "Orders"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Password confirmation"
+msgstr ""
+
+msgid "Please login in"
 msgstr ""
 
 msgid "Pricing"
@@ -117,7 +183,19 @@ msgstr ""
 msgid "READ MORE"
 msgstr ""
 
+msgid "Register to fnf"
+msgstr ""
+
+msgid "Remove avatar"
+msgstr ""
+
 msgid "Search for something"
+msgstr ""
+
+msgid "Send me reset password instructions"
+msgstr ""
+
+msgid "Sign up"
 msgstr ""
 
 msgid "Team"
@@ -127,6 +205,12 @@ msgid "Testimonials"
 msgstr ""
 
 msgid "Unvalid"
+msgstr ""
+
+msgid "Update"
+msgstr ""
+
+msgid "Username"
 msgstr ""
 
 msgid "Valid"
@@ -157,4 +241,7 @@ msgid "carusel_text_7"
 msgstr ""
 
 msgid "carusel_text_8"
+msgstr ""
+
+msgid "we app framework"
 msgstr ""

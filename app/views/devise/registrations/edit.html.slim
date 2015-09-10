@@ -1,0 +1,56 @@
+/.middle-box2.text-center.loginscreen.animated.fadeInDown
+.loginColumns.middle-box3.text-center.loginscreen.animated.fadeInDown
+  = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, multipart: true, role: 'form'}) do |f|
+    = f.error_notification
+    .row
+      .col-md-12
+        .authform
+          div
+            h1.logo-name-profile FnF
+          h3
+            = _('Edit profile')
+            '
+            /= resource_name.to_s.humanize
+            /= current_user.name
+          = devise_error_messages!
+          #avatar
+          - if @user.profile_image_id?
+            = image_tag attachment_url(@user, :profile_image, :fill, 100, 100), class: 'img-circle img-thumbnail'
+            br
+            =f.input :remove_profile_image, :label => _('Remove avatar'),  :as => :boolean, :label_html => { :class => "pull-center dispo" }
+          - else
+            = image_tag 'images.png', size: "120", class: "img-circle img-thumbnail"
+          .form-group
+            /= f.label :avatar, t('Your avatar')
+            = f.attachment_field :profile_image, direct: true, style: "margin-left:42%"
+    .row
+      .col-md-6
+        .authform
+          .form-group
+            = f.text_field :last_name, required: true, autofocus: true, class: 'form-control', placeholder: _('Last Name')
+          .form-group
+            = f.text_field :first_name, required: true, autofocus: true, class: 'form-control', placeholder: _('First Name')
+          .form-group
+            = f.text_field :middle_name, required: true, autofocus: true, class: 'form-control', placeholder: _('Middle Name')
+          .form-group
+            = f.email_field :email, required: true, autofocus: true, class: 'form-control', placeholder: _('Email')
+            - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+              p = _('Currently waiting')
+              '
+              = resource.unconfirmed_email
+          .form-group
+            = f.password_field :password, class: 'form-control', autocomplete: "off", placeholder: _('Password'), required: false, hint: _('Leave it blank')
+          .form-group
+            = f.password_field :password_confirmation, required: false, class: 'form-control', placeholder: _('Password confirmation')
+          = f.submit _('Update'), class: 'btn btn-primary block full-width m-b  right'
+
+        = link_to _('Create an account'), registration_path(resource_name), data: { confirm: _('Are you sure') }, method: :delete, class: 'btn btn-primary block full-width m-b  right'
+        = link_to _('Back'), :back, class: 'btn btn-primary block full-width m-b  right'
+      .col-md-6
+        .authform
+          .form-group
+            = f.input :about, class: 'form-control', autocomplete: "off", placeholder: _('About'),
+              label: false, required: false, hint: _('Leave it blank'), as: :text, input_html: { rows: "8" }
+          .form-group
+            = f.input :note, class: 'form-control', autocomplete: "off", placeholder: _('Note'),
+              label: false, required: false, hint: _('Leave it blank'), as: :text, input_html: { rows: "8" }

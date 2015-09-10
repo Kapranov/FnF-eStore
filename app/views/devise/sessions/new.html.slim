@@ -1,0 +1,31 @@
+.middle-box.text-center.loginscreen.animated.fadeInDown
+  .authform
+    = form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :role => 'form'}) do |f|
+      div
+        h1.logo-name FnF
+      h3 = _('Catalog of products')
+      p = _('Please login in')
+      = devise_error_messages!
+      .form-group
+        = f.email_field :email, :autofocus => true, class: 'form-control', placeholder: _('Username')
+      .form-group
+        = f.password_field :password, class: 'form-control', placeholder: _('Password')
+      = f.submit _('Login'), :class => 'btn btn-primary block full-width m-b'
+        - if devise_mapping.rememberable?
+          .checkbox[style="width:150px"]
+            label
+              = f.check_box :remember_me, as: :boolean if devise_mapping.rememberable?
+      .form-group
+        - if devise_mapping.recoverable?
+          small
+            = link_to _('Forgot password'), new_password_path(resource_name), class: 'right'
+          p.text-muted.text-center
+            small = _('Do not have an account')
+          small
+            = link_to _('Create an account'), new_registration_path(resource_name), class: 'btn btn-sm btn-white btn-block'
+    p.m-t
+      small Zettheme Inc.
+      '
+      | #{_('we app framework')}
+      '
+      | &copy; 2015
