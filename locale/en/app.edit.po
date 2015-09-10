@@ -18,6 +18,12 @@ msgstr ""
 " && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "\n"
 
+msgid "About"
+msgstr ""
+
+msgid "Address"
+msgstr ""
+
 msgid "Administration"
 msgstr ""
 
@@ -54,7 +60,13 @@ msgstr ""
 msgid "Dashboard"
 msgstr ""
 
+msgid "Dashboards"
+msgstr ""
+
 msgid "E-commerce"
+msgstr ""
+
+msgid "Email"
 msgstr ""
 
 msgid "Features"
@@ -87,6 +99,9 @@ msgstr "Manage Roles"
 msgid "Manage users"
 msgstr "Manage Users"
 
+msgid "Note"
+msgstr ""
+
 msgid "Orders"
 msgstr ""
 
@@ -109,6 +124,12 @@ msgid "Team"
 msgstr ""
 
 msgid "Testimonials"
+msgstr ""
+
+msgid "Unvalid"
+msgstr ""
+
+msgid "Valid"
 msgstr ""
 
 msgid "Welcome to dashboard page"

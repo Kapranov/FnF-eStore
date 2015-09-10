@@ -18,6 +18,12 @@ msgstr ""
 " && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "\n"
 
+msgid "About"
+msgstr "Про мене"
+
+msgid "Address"
+msgstr "Адреса"
+
 msgid "Administration"
 msgstr "Адміністрування"
 
@@ -54,8 +60,14 @@ msgstr "Контакти"
 msgid "Dashboard"
 msgstr "Панель"
 
+msgid "Dashboards"
+msgstr "Панелі"
+
 msgid "E-commerce"
 msgstr "Інтернет магазин"
+
+msgid "Email"
+msgstr "Поштова скринька"
 
 msgid "Features"
 msgstr "Особливості"
@@ -87,6 +99,9 @@ msgstr "Управління ролями"
 msgid "Manage users"
 msgstr "Управління користувачами"
 
+msgid "Note"
+msgstr "Примітка"
+
 msgid "Orders"
 msgstr "Замовлення"
 
@@ -110,6 +125,12 @@ msgstr "Команда"
 
 msgid "Testimonials"
 msgstr "Відгуки"
+
+msgid "Unvalid"
+msgstr "Недійсне"
+
+msgid "Valid"
+msgstr "Дійсний"
 
 msgid "Welcome to dashboard page"
 msgstr "Ласкаво просимо "

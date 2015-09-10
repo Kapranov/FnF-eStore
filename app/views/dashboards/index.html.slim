@@ -1,2 +1,129 @@
-h1 Dashboards#index
-p Find me in app/views/dashboards/index.html.slim
+.row.wrapper.border-bottom.white-bg.page-heading
+  .col-lg-9
+    h2 = _('Dashboards')
+    ol.breadcrumb
+      li
+        a[href="#{url_for :controller => 'dashboards', :action => 'index'}"] = _('Home')
+      li.active
+        strong = _('Dashboard')
+.wrapper.wrapper-content.animated.fadeInRight
+  .row
+    .col-lg-3
+      .widget.style1.blue-bg
+        .row
+          .col-xs-4.text-center
+            i.fa.fa-trophy.fa-5x
+          .col-xs-8.text-right
+            span Today income
+            h2.font-bold.$ 4,232
+    .col-lg-3
+      .widget.style1.navy-bg
+        .row
+          .col-xs-4
+            i.fa.fa-cloud.fa-5x
+          .col-xs-8.text-right
+            span Today degrees
+            h2.font-bold 26 C
+    .col-lg-3
+      .widget.style1.lazur-bg
+        .row
+          .col-xs-4
+            i.fa.fa-envelope-o.fa-5x
+          .col-xs-8.text-right
+            span New messages
+            h2.font-bold 260
+    .col-lg-3
+      .widget.style1.yellow-bg
+        .row
+          .col-xs-4
+            i.fa.fa-music.fa-5x
+          .col-xs-8.text-right
+            span New albums
+            h2.font-bold 12
+  .row
+    .col-lg-4
+      .widget-head-color-box.navy-bg.p-lg.text-center
+        .m-b-md
+          h2.font-bold.no-margins = current_user.name
+          small = current_user.email
+        - if current_user.profile_image_id?
+          span
+            = image_tag attachment_url(current_user, :profile_image, :fill, 100, 100), class: 'img-circle circle-border m-b-md'
+        - else
+          = image_tag 'images.png', size: "100", class: "img-circle"
+        div
+          span Role
+          |:
+          '
+          span = current_user.role
+          '
+          | |
+          '
+          span
+            = _('Note')
+            |:
+            '
+            - if current_user.note?
+              span = _('Valid')
+            - else
+              span = _('Unvalid')
+          '
+          | |
+          '
+          span
+            = _('About')
+            |:
+            '
+            - if current_user.about?
+              span = _('Valid')
+            - else
+              span = _('Unvalid')
+      /.widget.red-bg.p-md
+        .m-b-md
+          h2 = _('Role')
+          small = current_user.role
+      .widget.lazur-bg.p-md
+        .m-b-md
+          h2 = _('About')
+          small = current_user.about
+    .col-lg-4
+      .widget.lazur-bg.p-xl
+        h2 = current_user.name
+        ul.list-unstyled.m-t-md
+          li
+            span.fa.fa-envelope.m-r-xs
+            label = _('Email')
+            |:
+            '
+            = current_user.email
+          li
+            span.fa.fa-home.m-r-xs
+            label = _('Address')
+            |:
+            '
+            | Street 200, Avenue 10
+          li
+            span.fa.fa-phone.m-r-xs
+            label = _('Contact')
+            |:
+            '
+            | (+121) 678 3462
+      .widget.lazur-bg.p-xl
+        .m-b-md
+          h2 = _('Note')
+          small = current_user.note
+    .col-lg-4
+      .widget.lazur-bg.no-padding
+        .p-m
+          h1.m-xs $ 210,660
+          h3.font-bold.no-margins Monthly income
+          small Income form project Beta.
+        .flot-chart
+          .flot-chart-content#flot-chart2
+      .widget.yellw-bg.no-padding
+        .p-m
+          h1.m-xs $ 50,992
+          h3.font-bold.no-margins Half-year revenue margin
+          small Sales marketing.
+        .flot-chart
+          .flot-chart-content#flot-chart3
