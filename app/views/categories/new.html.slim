@@ -1,0 +1,23 @@
+.row.wrapper.border-bottom.white-bg.page-heading2
+  .col-lg-7
+    h2 = t('Catalog')
+    ol.breadcrumb
+      li
+        a[href="#{url_for :controller => 'categories', :action => 'index'}"] = t('Categories')
+      li.active
+        strong = t('Create category')
+  .col-lg-4
+    .title-action
+      = link_to "<button class='btn btn-sm btn-success dim btn-outline button-width' type='button'>#{t('Back')}</button>".html_safe, categories_path
+      = link_to "<button class='btn btn-sm btn-success dim btn-outline button-width' type='button'>#{t('Show')}</button>".html_safe, @category
+  .col-lg-1
+
+== render 'form'
+
+
+
+/h1 New category
+
+/== render 'form'
+
+/= link_to 'Back', categories_path

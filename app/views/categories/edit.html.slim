@@ -1,0 +1,23 @@
+.row.wrapper.border-bottom.white-bg.page-heading2
+  .col-lg-8
+    h2 = t('Catalog')
+    ol.breadcrumb
+      li
+        a[href="<%= url_for :controller => 'dashboards', :action => 'dashboard_1' %>"] = t('Categories')
+      li.active
+        strong = t('Edit categories')
+  .col-lg-4
+    .title-action
+      = link_to "<button class='btn btn-sm btn-success dim btn-outline button-width' type='button'>#{t('Back')}</button>".html_safe, categories_path
+      = link_to "<button class='btn btn-sm btn-success dim btn-outline button-width' type='button'>#{t('Show')}</button>".html_safe, @category
+  .col-lg-1
+
+== render 'form'
+
+/h1 Editing category
+
+/== render 'form'
+
+/= link_to 'Show', @category
+/'|
+/= link_to 'Back', categories_path

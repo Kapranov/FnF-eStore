@@ -21,9 +21,6 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-msgid "Address"
-msgstr ""
-
 msgid "Administration"
 msgstr ""
 
@@ -45,9 +42,6 @@ msgstr ""
 msgid "Calendar"
 msgstr ""
 
-msgid "Cancel my account"
-msgstr ""
-
 msgid "Catalog"
 msgstr ""
 
@@ -56,6 +50,18 @@ msgstr ""
 
 msgid "Categories"
 msgstr ""
+
+msgid "Category not found"
+msgstr "Category not found."
+
+msgid "Category was successfully created"
+msgstr "Category was successfully created."
+
+msgid "Category was successfully destroyed"
+msgstr "Category was successfully destroyed."
+
+msgid "Category was successfully updated"
+msgstr "Category was successfully updated."
 
 msgid "Change my password"
 msgstr ""
@@ -76,7 +82,7 @@ msgid "Contacts"
 msgstr ""
 
 msgid "Create account to see it in action"
-msgstr ""
+msgstr "Create account to see it in action."
 
 msgid "Create an account"
 msgstr ""
@@ -91,7 +97,7 @@ msgid "Dashboards"
 msgstr ""
 
 msgid "Do not have an account"
-msgstr ""
+msgstr "Do not have an account?"
 
 msgid "E-commerce"
 msgstr ""
@@ -130,7 +136,7 @@ msgid "Learn more"
 msgstr "Learn More"
 
 msgid "Leave it blank"
-msgstr ""
+msgstr "Leave it blank."
 
 msgid "Login"
 msgstr ""
@@ -169,7 +175,7 @@ msgid "Password confirmation"
 msgstr ""
 
 msgid "Please login in"
-msgstr ""
+msgstr "Please login in."
 
 msgid "Pricing"
 msgstr ""
@@ -190,10 +196,10 @@ msgid "Remove avatar"
 msgstr ""
 
 msgid "Search for something"
-msgstr ""
+msgstr "Search for something ..."
 
 msgid "Send me reset password instructions"
-msgstr ""
+msgstr "Send me reset password instructions."
 
 msgid "Sign up"
 msgstr ""
@@ -204,16 +210,10 @@ msgstr ""
 msgid "Testimonials"
 msgstr ""
 
-msgid "Unvalid"
-msgstr ""
-
 msgid "Update"
 msgstr ""
 
 msgid "Username"
-msgstr ""
-
-msgid "Valid"
 msgstr ""
 
 msgid "Welcome to dashboard page"

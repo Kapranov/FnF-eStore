@@ -21,9 +21,6 @@ msgstr ""
 msgid "About"
 msgstr "Про мене"
 
-msgid "Address"
-msgstr "Адреса"
-
 msgid "Administration"
 msgstr "Адміністрування"
 
@@ -53,6 +50,18 @@ msgstr "Каталог продукції"
 
 msgid "Categories"
 msgstr "Категорії"
+
+msgid "Category not found"
+msgstr "Категорія не знайдена"
+
+msgid "Category was successfully created"
+msgstr "Категорія успішно створена."
+
+msgid "Category was successfully destroyed"
+msgstr "Категорія успішно знищені."
+
+msgid "Category was successfully updated"
+msgstr "Категорія була успішно оновлено."
 
 msgid "Change my password"
 msgstr "Забули пароль?"
@@ -201,17 +210,11 @@ msgstr "Команда"
 msgid "Testimonials"
 msgstr "Відгуки"
 
-msgid "Unvalid"
-msgstr "Немае"
-
 msgid "Update"
 msgstr "Оновлення"
 
 msgid "Username"
 msgstr "Ваш Логін"
-
-msgid "Valid"
-msgstr "Мае"
 
 msgid "Welcome to dashboard page"
 msgstr "Ласкаво просимо "

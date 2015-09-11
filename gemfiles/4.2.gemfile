@@ -20,7 +20,6 @@ gem 'pundit'
 gem 'simple_form'
 gem 'slim-rails'
 gem 'upmin-admin'
-gem 'annotate'
 gem 'refile', require: "refile/rails"
 gem 'refile-mini_magick'
 gem 'rails-i18n',                     '~> 4.0.0'
@@ -31,7 +30,7 @@ gem 'globalize',                      '~> 5.0.0'
 gem 'globalize-accessors'
 gem 'geocoder'
 gem 'countries_and_languages', :require => 'countries_and_languages/rails'
-gem 'annotate'
+gem 'foreigner'
 
 group :development do
   gem 'web-console',                  '~> 2.0'
@@ -41,6 +40,7 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-rails',             '~> 1.1.0'
   gem 'capistrano-rails-console'
+  gem 'capistrano-rbenv'
   gem 'guard-bundler'
   gem 'guard-rails'
   gem 'guard-rspec'
@@ -53,12 +53,15 @@ group :development do
   gem 'spring-commands-rspec'
   gem 'gettext',                      '>= 3.1.6', :require => false
   gem 'ruby_parser', :require => false
+  gem 'annotate'
+  gem 'ffaker'
+  gem 'faker'
+  gem 'populator'
 end
 
 group :development, :test do
   gem 'byebug'
   gem 'factory_girl_rails'
-  gem 'faker'
   gem 'pry-rails'
   gem 'pry-rescue'
   gem 'rspec-rails'

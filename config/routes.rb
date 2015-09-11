@@ -1,17 +1,10 @@
 Rails.application.routes.draw do
 
   get 'stores/index'
-
   get 'products/index'
-
-  get 'categories/index'
-
   get 'companies/index'
-
   get 'forum_threads/index'
-
   get 'calendars/index'
-
   get 'dashboards/index'
   get 'landings/index'
   get 'settings/change_locale'
@@ -25,7 +18,9 @@ Rails.application.routes.draw do
   root to: "landings#index"
 
   devise_for :users, controllers: {registrations: 'registrations'}
+
   resources :users
+  resources :categories
 
   %w( 404 422 500 ).each do |code|
     get code, :to => "errors#show", :code => code
