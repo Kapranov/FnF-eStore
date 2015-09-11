@@ -1,3 +1,10 @@
-// Place all the styles related to the Categories controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+//= require summernote/summernote-bs3.css
+//= require summernote/summernote.css
+
+.size-13 {
+  font-size: 13px;
+}
+
+.page-heading-botton {
+  padding: 0px 10px 14px;
+}

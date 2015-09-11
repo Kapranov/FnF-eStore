@@ -1,6 +1,3 @@
-= stylesheet_link_tag "categories", :media => 'all'
-= javascript_include_tag 'categories'
-
 .wrapper.wrapper-content.animated.fadeInRight.ecommerce
   .row
     .col-lg-12
@@ -9,19 +6,19 @@
         .tabs-container
           ul.nav.nav-tabs
             li.active
-              a[data-toggle="tab" href="#tab-1"] = t('New category')
+              a[data-toggle="tab" href="#tab-1"] = _('New category')
             li
               .form-actions
-                = f.submit t('Save'), class: "btn btn-info btn-block"
+                = f.submit _('Save'), class: "btn btn-info btn-block"
           .tab-content
             #tab-1.tab-pane.active
               .panel-body
                 fieldset.form-horizontal
                   .form-group
-                    label.col-sm-2.control-label = t('Name')
+                    label.col-sm-2.control-label = _('Name')
                     .col-sm-4
                       .form-inputs
-                        = f.input :name, label: false, placeholder: t('Category name')
+                        = f.input :name, label: false, placeholder: _('Category name')
                     .col-sm-2
                       button.btn.btn-danger.btn-xs.dropdown-toggle[data-toggle="dropdown"]
                         = t('menu.languages.lang')
@@ -32,10 +29,10 @@
                         li = link_to t('menu.languages.ru'), change_locale_path(:ru)
                         li = link_to t('menu.languages.uk'), change_locale_path(:uk)
                   .form-group
-                    label.col-sm-2.control-label = t('Description')
+                    label.col-sm-2.control-label = _('Description')
                     .col-sm-8
                       .form-inputs
-                        = f.input :description, label: false, placeholder: t('Description'), input_html: { class: 'summernote' }
+                        = f.input :description, label: false, placeholder: _('Description'), input_html: { class: 'summernote' }
                     .col-sm-2
                       button.btn.btn-danger.btn-xs.dropdown-toggle[data-toggle="dropdown"]
                         = t('menu.languages.lang')
@@ -46,35 +43,12 @@
                         li = link_to t('menu.languages.ru'), change_locale_path(:ru)
                         li = link_to t('menu.languages.uk'), change_locale_path(:uk)
                   .form-group
-                    label.col-sm-2.control-label = t('Displayed')
+                    label.col-sm-2.control-label = _('Displayed')
                     .col-sm-2
                       .form-inputs
                         = f.input :displayed, label: false
                         '
-                        = t('yes or no')
-      /.col-sm-4
-        .links.animated.rotateIn
-          = link_to '<i class="fa fa-reply size-14"></i>'.html_safe, categories_path
-          '
-          |
-          i.badge.badge-warning = t('Back')
-          '
-          = t('Or')
-          |
-          '
-          = link_to '<i class="fa fa-eye size-14"></i>'.html_safe, @category
-          '
-          |
-          i.badge.badge-info = t('Show')
+                        = _('yes or no')
 
-/= simple_form_for(@category) do |f|
-  = f.error_notification
-
-  /.form-inputs
-    = f.association :user
-    = f.input :name
-    = f.input :description
-    = f.input :displayed
-
-  /.form-actions
-    = f.button :submit
+= stylesheet_link_tag "categories", :media => 'all'
+= javascript_include_tag 'categories'

@@ -1,23 +1,23 @@
-.row.wrapper.border-bottom.white-bg.page-heading2
+.row.wrapper.border-bottom.white-bg.page-heading.page-heading-botton
   .col-lg-7
-    h2 = t('Catalog')
+    h2 = _('Catalog')
     ol.breadcrumb
       li
-        a[href="#{url_for :controller => 'categories', :action => 'index'}"] = t('Categories')
+        a[href="#{url_for :controller => 'categories', :action => 'index'}"] = _('Categories')
       li.active
-        strong = t('Show categories')
+        strong = _('Show categories')
   .col-lg-4
     .title-action
-      = link_to "<button class='btn btn-sm btn-success dim btn-outline button-width' type='button'>#{t('Back')}</button>".html_safe, categories_path
-      = link_to "<button class='btn btn-sm btn-success dim btn-outline button-width' type='button'>#{t('Edit')}</button>".html_safe, edit_category_path(@category)
+      = link_to "<button class='btn btn-sm btn-success dim btn-outline button-width' type='button'>#{_('Back')}</button>".html_safe, categories_path
+      = link_to "<button class='btn btn-sm btn-success dim btn-outline button-width' type='button'>#{_('Edit')}</button>".html_safe, edit_category_path(@category)
   .col-lg-1
-
+br
 .row
   .wrapper.animated.fadeInRight
-    .col-lg-8
+    .col-lg-12
       .ibox.float-e-margins
         .ibox-title
-          h5 = t('Show category')
+          h5 = _('Show category')
           .ibox-tools
             a.collapse-link
               i.fa.fa-chevron-up
@@ -32,67 +32,33 @@
               i.fa.fa-times
         .ibox-content
           .row
-            .col-sm-8
+            .col-sm-10
               p
-                strong = t('Id')
+                strong = _('Id')
                 '
                 = @category.id
               p
-                strong = t('Name')
+                strong = _('Name')
                 '
                 = @category.name
               p
                 - if @category.displayed
-                  strong = t('Displayed')
+                  strong = _('Displayed')
                   | :
                   '
-                  span.label.label-success = t('Done')
+                  span.label.label-success = _('Done')
                 - else
-                  strong = t('Displayed')
+                  strong = _('Displayed')
                   | :
                   '
-                  span.label.label-warning = t('None')
+                  span.label.label-warning = _('None')
 
                 |
                 '
               p
-                strong = t('Description')
+                strong = _('Description')
                 '
                 = @category.description.html_safe
-        /br
-        /.col-sm-6
-          .links.animated.rotateIn
-            = link_to '<i class="fa fa-reply size-14"></i>'.html_safe, categories_path
-            '
-            |
-            i.badge.badge-warning = t('Back')
-            '
-            |
-            = t('Or')
-            |
-            '
-            = link_to '<i class="fa fa-edit size-14"></i>'.html_safe, edit_category_path(@category)
-            '
-            |
-            i.badge.badge-info = t('Edit')
-        /.col-lg-3
-          = link_to t('Edit'), edit_category_path(@category), class: "btn btn-info btn-block"
 
-/p#notice = notice
-
-/p
-  strong User:
-  = @category.id
-/p
-  strong Name:
-  = @category.name
-/p
-  strong Description:
-  = @category.description.html_safe
-/p
-  strong Displayed:
-  = @category.displayed
-
-/= link_to 'Edit', edit_category_path(@category)
-/'|
-/= link_to 'Back', categories_path
+= stylesheet_link_tag "categories", :media => 'all'
+= javascript_include_tag 'categories'

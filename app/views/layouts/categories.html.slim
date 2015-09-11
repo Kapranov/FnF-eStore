@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    title
+      = content_for?(:title) ? yield(:title) : 'Fnf Zettheme'
+    meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Fnf Zettheme'}"
+    == stylesheet_link_tag "categories", :media => 'all'
+    == javascript_include_tag 'categories'
+    == csrf_meta_tags
+  body
+    #wrapper
+      == render 'layouts/dashboards_navigation'
+    #page-wrapper.gray-bg
+      == render 'layouts/dashboards_topnavbar'
+      == yield
+      == render 'shared/flash_messages', flash: flash
+      == render 'layouts/dashboards_footer'
+      == render 'layouts/dashboards_right_sidebar'
+      == render 'layouts/dashboards_chat_box'
+      /== render 'layouts/dashboards_skinconfig'

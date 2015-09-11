@@ -1,23 +1,18 @@
-.row.wrapper.border-bottom.white-bg.page-heading2
+.row.wrapper.border-bottom.white-bg.page-heading.page-heading-botton
   .col-lg-8
-    h2 = t('Catalog')
+    h2 = _('Catalog')
     ol.breadcrumb
       li
-        a[href="<%= url_for :controller => 'dashboards', :action => 'dashboard_1' %>"] = t('Categories')
+        a[href="<%= url_for :controller => 'dashboards', :action => 'dashboard_1' %>"] = _('Categories')
       li.active
-        strong = t('Edit categories')
+        strong = _('Edit categories')
   .col-lg-4
     .title-action
-      = link_to "<button class='btn btn-sm btn-success dim btn-outline button-width' type='button'>#{t('Back')}</button>".html_safe, categories_path
-      = link_to "<button class='btn btn-sm btn-success dim btn-outline button-width' type='button'>#{t('Show')}</button>".html_safe, @category
+      = link_to "<button class='btn btn-sm btn-success dim btn-outline button-width' type='button'>#{_('Back')}</button>".html_safe, categories_path
+      = link_to "<button class='btn btn-sm btn-success dim btn-outline button-width' type='button'>#{_('Show')}</button>".html_safe, @category
   .col-lg-1
 
 == render 'form'
 
-/h1 Editing category
-
-/== render 'form'
-
-/= link_to 'Show', @category
-/'|
-/= link_to 'Back', categories_path
+= stylesheet_link_tag "categories", :media => 'all'
+= javascript_include_tag 'categories'
