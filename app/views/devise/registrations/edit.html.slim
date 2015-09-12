@@ -1,6 +1,5 @@
-/.middle-box2.text-center.loginscreen.animated.fadeInDown
 .loginColumns.middle-box3.text-center.loginscreen.animated.fadeInDown
-  = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, multipart: true, role: 'form'}) do |f|
+  = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, role: 'form'}) do |f|
     = f.error_notification
     .row
       .col-md-12
@@ -49,7 +48,6 @@
       .col-md-6
         .authform
           .form-group
-            /= f.attachment_field :profile_image, multipart: true, id: "area-upload", class: "dropzone", style: "width:385px"
             = f.attachment_field :profile_image, multipart: true, id: "area-upload", class: "dropzone", style: "width:385px"
           .form-group
             = f.input :about, class: 'form-control', autocomplete: "off", placeholder: _('About'),
