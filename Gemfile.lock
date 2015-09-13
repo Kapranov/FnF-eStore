@@ -56,20 +56,20 @@ GEM
       sass (>= 3.3.0)
     builder (3.2.2)
     byebug (6.0.2)
-    capistrano (3.0.1)
+    capistrano (3.4.0)
       i18n
       rake (>= 10.0.0)
-      sshkit (>= 0.0.23)
-    capistrano-bundler (1.1.2)
-      capistrano (~> 3.0)
+      sshkit (~> 1.3)
+    capistrano-bundler (1.1.4)
+      capistrano (~> 3.1)
       sshkit (~> 1.2)
-    capistrano-rails (1.1.0)
-      capistrano (>= 3.0.0)
-      capistrano-bundler (>= 1.0.0)
-    capistrano-rails-console (0.5.2)
-      capistrano (>= 3.0.0, < 4.0.0)
-    capistrano-rbenv (2.0.1)
-      capistrano (~> 3.0)
+    capistrano-rails (1.1.3)
+      capistrano (~> 3.1)
+      capistrano-bundler (~> 1.1)
+    capistrano-rails-console (1.0.0)
+      capistrano (>= 3.1.0, < 4.0.0)
+    capistrano-rbenv (2.0.3)
+      capistrano (~> 3.1)
       sshkit (~> 1.3)
     capybara (2.5.0)
       mime-types (>= 1.16)
@@ -259,11 +259,11 @@ GEM
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    refile (0.6.0)
+    refile (0.6.1)
       mime-types
       rest-client (~> 1.8)
       sinatra (~> 1.4.5)
-    refile-mini_magick (0.1.0)
+    refile-mini_magick (0.2.0)
       mini_magick (~> 4.0)
       refile (~> 0.5)
     responders (2.1.0)
@@ -327,7 +327,7 @@ GEM
       railties (>= 3.1, < 5.0)
       slim (~> 3.0)
     slop (3.6.0)
-    spring (1.3.6)
+    spring (1.4.0)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
     sprockets (3.3.4)
@@ -380,9 +380,9 @@ DEPENDENCIES
   better_errors
   bootstrap-sass (~> 3.3.5)
   byebug
-  capistrano (~> 3.0.1)
+  capistrano
   capistrano-bundler
-  capistrano-rails (~> 1.1.0)
+  capistrano-rails
   capistrano-rails-console
   capistrano-rbenv
   capybara
