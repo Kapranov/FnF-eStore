@@ -47,8 +47,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  translates :first_name, :last_name, :middle_name, :note, :about, :fallbacks_for_empty_translations => true
-
   def name
     "#{last_name} #{first_name} #{middle_name}"
   end

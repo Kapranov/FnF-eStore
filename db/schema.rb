@@ -11,30 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150911083510) do
-
-  create_table "categories", force: :cascade do |t|
-    t.integer  "user_id"
-    t.string   "name"
-    t.text     "description"
-    t.string   "displayed"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  add_index "categories", ["user_id"], name: "index_categories_on_user_id"
-
-  create_table "category_translations", force: :cascade do |t|
-    t.integer  "category_id", null: false
-    t.string   "locale",      null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.string   "name"
-    t.text     "description"
-  end
-
-  add_index "category_translations", ["category_id"], name: "index_category_translations_on_category_id"
-  add_index "category_translations", ["locale"], name: "index_category_translations_on_locale"
+ActiveRecord::Schema.define(version: 20150905193227) do
 
   create_table "sessions", force: :cascade do |t|
     t.string   "session_id", null: false
@@ -45,21 +22,6 @@ ActiveRecord::Schema.define(version: 20150911083510) do
 
   add_index "sessions", ["session_id"], name: "index_sessions_on_session_id", unique: true
   add_index "sessions", ["updated_at"], name: "index_sessions_on_updated_at"
-
-  create_table "user_translations", force: :cascade do |t|
-    t.integer  "user_id",     null: false
-    t.string   "locale",      null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "middle_name"
-    t.text     "note"
-    t.text     "about"
-  end
-
-  add_index "user_translations", ["locale"], name: "index_user_translations_on_locale"
-  add_index "user_translations", ["user_id"], name: "index_user_translations_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                      default: "", null: false
