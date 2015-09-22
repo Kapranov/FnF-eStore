@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
   get 'categories/index'
-
   get 'stores/index'
   get 'products/index'
   get 'companies/index'
@@ -22,7 +21,6 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {registrations: 'registrations'}
 
   resources :users
-  resources :categories
 
   %w( 404 422 500 ).each do |code|
     get code, :to => "errors#show", :code => code
