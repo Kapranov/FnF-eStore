@@ -14,7 +14,7 @@
                     <ul class="nav navbar-nav navbar-right">
                       <% if user_signed_in? %>
                         <li>
-                          <%= link_to current_user.name, edit_user_registration_path, :class => 'navbar-link'  %>
+                          <%= link_to current_user.name, dashboards_path, :class => 'navbar-link'  %>
                         </li>
                       <% else %>
                         <li>

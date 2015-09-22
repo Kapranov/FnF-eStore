@@ -15,7 +15,7 @@ namespace :db do
       ['1', '2', '3'].sample
     end
 
-    Category.populate 99 do |category|
+    Category.populate 9 do |category|
       category.user_id      = random_users
       category.name         = FFaker::Lorem.word
       category.description  = FFaker::HipsterIpsum.words(10).join(' ')
